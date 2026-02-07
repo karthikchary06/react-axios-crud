@@ -1,5 +1,4 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-constant-condition */
+
 import { useEffect, useState } from "react";
 import { postData, updateData } from "../api/PostApi";
 
@@ -33,7 +32,9 @@ export const Form = ({ data, setData, updateDataApi, setUpdateDataApi }) => {
   };
 
   const addPostData = async () => {
-    const res = await postData(addData);
+    const newPost = addData;  // store copy
+    setAddData({ title: "", body: "" });
+    const res = await postData(newPost);
     console.log("res", res);
 
     if (res.status === 201) {
