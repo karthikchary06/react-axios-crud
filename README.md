@@ -31,8 +31,8 @@ This project covers:
 
 ---
 
-## 📂 Project Structure
-src/
+# 📂 Project Structure
+# src/
 ├── api/
 │ └── PostApi.jsx
 ├── components/
@@ -64,8 +64,8 @@ So POST/PUT/DELETE will work in response, but after refresh it resets.
 Clone the repo and install dependencies:
 
 
-npm install
-npm run dev
+# npm install
+# npm run dev
 
 
 📌 Learning Outcome
